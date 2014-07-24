@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <disabledAdministrativeMonitors/>
-  <version>1.0</version>
+  <version>1.572</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -20,7 +20,16 @@
   </jdks>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds/>
+  <clouds>
+    <com.nirima.jenkins.plugins.docker.DockerCloud plugin="docker-plugin@0.7">
+      <name>Docker 1</name>
+      <templates/>
+      <serverUrl>http://172.17.8.101:4243</serverUrl>
+      <containerCap>2147483647</containerCap>
+      <connectTimeout>5</connectTimeout>
+      <readTimeout>15</readTimeout>
+    </com.nirima.jenkins.plugins.docker.DockerCloud>
+  </clouds>
   <slaves/>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>

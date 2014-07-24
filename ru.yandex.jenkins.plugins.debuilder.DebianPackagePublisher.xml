@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ru.yandex.jenkins.plugins.debuilder.DebianPackagePublisher_-DescriptorImpl plugin="debian-package-builder@1.6.0">
+  <repos/>
+</ru.yandex.jenkins.plugins.debuilder.DebianPackagePublisher_-DescriptorImpl>
